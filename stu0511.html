@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .pbox{display:flex;flex-flow:row nowrap;justify-content:space-around;}
+        .cbox{flex-basis:0;height:200px;border:1px solid black;flex-shrink:1;}
+        .cell1{flex-grow:1;}
+        .cell2{flex-grow:2;}
+        .cell3{flex-grow:3;}
+
+        .content{width:80%;margin:0px auto;}
+
+        @media all and (max-width:500px){
+            .pbox{flex-direction:column;}
+            .content{height:800px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="pbox content">
+        <div class="cbox cell1"></div>
+        <div class="cbox cell1"></div>
+        <div class="cbox cell1"></div>
+        <div class="cbox cell1"></div>
+    </div>
+</body>
+</html>
